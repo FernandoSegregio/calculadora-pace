@@ -1,13 +1,16 @@
-import React from 'react'
-import './App.css'
+import React from 'react';
+import CalcPaceDist from './components/CalcPaceDist';
+import CalcPaceTemp from './components/CalcPaceTemp';
+import GlobalStyle from './style/GlobalStyle';
 
 function App() {
-
   return (
     <div>
-    Calculadora de Pace 
+      <GlobalStyle />
+      <CalcPaceDist />
+      <CalcPaceTemp />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
