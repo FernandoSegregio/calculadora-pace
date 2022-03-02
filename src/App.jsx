@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div>
-      Calculadora de Pace 
+    Calculadora de Pace 
     </div>
   )
 }
