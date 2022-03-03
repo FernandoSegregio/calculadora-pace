@@ -35,9 +35,6 @@ export default function CalcPaceTemp() {
       setCalcTempHour(intHour);
       setCalcTempMin(intMin);
     }
-    setDistance('');
-    setMin('');
-    setSeg('');
   }
 
   return (
