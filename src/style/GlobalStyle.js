@@ -32,4 +32,8 @@ export default createGlobalStyle`
     width: 170px;
     margin-top: 10px;
   }
+
+  .container-app{
+    row-gap: 25px;
+  }
 `;

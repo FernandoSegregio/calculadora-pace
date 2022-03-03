@@ -17,7 +17,7 @@ const CountainerStyle = styled.div`
       text-align: center;
       padding: 23px;
       color: var(--yellow);
-      font-size: 1.3rem;
+      font-size: 1.12rem;
     }
 
     label {
