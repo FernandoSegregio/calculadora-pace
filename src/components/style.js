@@ -6,7 +6,7 @@ const CountainerStyle = styled.div`
     flex-direction: column;
     align-items: center;
     width: 80%;
-    height: 330px;
+    height: 290px;
     background: var(--gray);
     border-radius: 15px;  
     margin-left: auto;
@@ -15,7 +15,7 @@ const CountainerStyle = styled.div`
 
     H3 {
       text-align: center;
-      padding: 23px;
+      padding: 18px;
       color: var(--yellow);
       font-size: 1rem;
     }
@@ -24,6 +24,7 @@ const CountainerStyle = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;  
+      width: 100%
     }
 
     label {
@@ -31,11 +32,11 @@ const CountainerStyle = styled.div`
       flex-direction: column;
       align-items: center;
       column-gap: 4px;
+      width: 90%;
     }
 
     .min-seg {
-      align-items: flex-start;
-      width: 86%;
+      width: 90%;
     }
 
     .for-km {
@@ -49,7 +50,7 @@ const CountainerStyle = styled.div`
       border-radius: 6px;
       font-size: 0.855rem;
       padding-left: 20px;
-      width: 150%;
+      width: 90%;
     }
 
     input::placeholder {
@@ -64,7 +65,7 @@ const CountainerStyle = styled.div`
       background-color: var(--black);
       border: none;
       border-radius: 6px;
-      width: 86%;
+      width: 82%;
       color: var(--yellow);
       font-size: 1rem;
     }
