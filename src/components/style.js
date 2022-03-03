@@ -48,7 +48,7 @@ const CountainerStyle = styled.div`
       background-color: var(--grayLight);
       border: none;
       border-radius: 6px;
-      font-size: 0.855rem;
+      font-size: 1.3rem;
       width: 90%;
       text-align: center;
     }
