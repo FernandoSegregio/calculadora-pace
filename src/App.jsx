@@ -1,13 +1,13 @@
 import React from 'react';
-import CalcPaceDist from './components/CalcPaceDist';
 import CalcPaceTemp from './components/CalcPaceTemp';
 import GlobalStyle from './style/GlobalStyle';
+import logo from './images/logo.png';
 
 function App() {
   return (
     <div>
+      <img src={logo} alt="Logo Pace Facil" />
       <GlobalStyle />
-      <CalcPaceDist />
       <CalcPaceTemp />
     </div>
   );
