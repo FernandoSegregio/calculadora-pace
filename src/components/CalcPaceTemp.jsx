@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import CountainerStyle from './style';
 
 export default function CalcPaceTemp() {
+  const [calcTempHour, setCalcTempHour] = useState(0);
+  const [calcTempMin, setCalcTempMin] = useState('00');
   const [distance, setDistance] = useState('');
   const [min, setMin] = useState('');
   const [seg, setSeg] = useState('');
@@ -16,6 +18,26 @@ export default function CalcPaceTemp() {
 
   function handleIputSeg(target) {
     setSeg(target.value);
+  }
+
+  function calcDistance() {
+    const transformMinSeg = Number(min) * 60;
+    const minSumSeg = Number(transformMinSeg) + Number(seg);
+    const distanceCalc = minSumSeg * Number(distance);
+    const convertTime = Number(distanceCalc / 3600);
+    const intHour = Math.trunc(convertTime);
+    const decimalHour = convertTime % 1;
+    const intMin = Math.trunc(decimalHour * 60);
+    if (intHour < 1) {
+      setCalcTempHour(0);
+      setCalcTempMin(intMin);
+    } else if (convertTime >= 1) {
+      setCalcTempHour(intHour);
+      setCalcTempMin(intMin);
+    }
+    setDistance('');
+    setMin('');
+    setSeg('');
   }
 
   return (
@@ -33,7 +55,7 @@ export default function CalcPaceTemp() {
             <input type="number" value={seg} onChange={({ target }) => handleIputSeg(target)} placeholder="Segundos" />
           </label>
         </div>
-        <button type="button" onClick={}>Calcular</button>
+        <button type="button" onClick={calcDistance}>Calcular</button>
       </form>
       <h3>
         Tempo total:
