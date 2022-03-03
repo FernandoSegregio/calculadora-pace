@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import CountainerStyle from './style';
 
 export default function CalcPaceDist() {
+  const [calcTempMin, setCalcTempMin] = useState(0);
+  const [calcTempSeg, setCalcTempSeg] = useState('00');
   const [distance, setDistance] = useState('');
   const [hour, setHour] = useState('');
   const [min, setMin] = useState('');
@@ -16,6 +18,10 @@ export default function CalcPaceDist() {
 
   function handleIputMin(target) {
     setMin(target.value);
+  }
+
+  function calcDistance() {
+
   }
 
   return (
@@ -33,10 +39,16 @@ export default function CalcPaceDist() {
             <input type="number" value={min} onChange={({ target }) => handleIputMin(target)} placeholder="Minutos" />
           </label>
         </div>
-        <button type="button">Calcular</button>
+        <button type="button" onClick={calcDistance}>Calcular</button>
       </form>
       <h3>
         Pace Médio:
+        {' '}
+        {calcTempMin}
+        min
+        {' '}
+        {calcTempSeg}
+        seg
         {' '}
       </h3>
     </CountainerStyle>
