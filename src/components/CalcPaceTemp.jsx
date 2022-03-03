@@ -42,7 +42,7 @@ export default function CalcPaceTemp() {
 
   return (
     <CountainerStyle>
-      <h3>CALCULA TEMPO TOTAL DE ACORDO COM O PACE</h3>
+      <h3>TEMPO TOTAL DE ACORDO A DISTÂNCIA E O PACE</h3>
       <form action="">
         <label htmlFor="km">
           Distância (em Km)
