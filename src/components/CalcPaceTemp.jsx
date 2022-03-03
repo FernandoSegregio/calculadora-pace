@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CountainerStyle from './style';
+import { CountainerStyle } from './style';
 
 export default function CalcPaceTemp() {
   const [calcTempHour, setCalcTempHour] = useState(0);

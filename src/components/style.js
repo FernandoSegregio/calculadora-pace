@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const CountainerStyle = styled.div`
+export const CountainerStyle = styled.div`
   @media (max-width: 800px) {
     display: flex;
     flex-direction: column;
@@ -72,4 +72,20 @@ const CountainerStyle = styled.div`
   }
 `;
 
-export default CountainerStyle;
+export const FooterStyle = styled.footer`
+  @media (max-width: 800px) {
+
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+  
+    h4 {
+      font-family: sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.3px;
+    }
+  }
+`;

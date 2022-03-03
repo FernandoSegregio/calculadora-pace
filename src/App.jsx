@@ -3,6 +3,7 @@ import CalcPaceTemp from './components/CalcPaceTemp';
 import GlobalStyle from './style/GlobalStyle';
 import logo from './images/logo.png';
 import CalcPaceDist from './components/CalcPaceDist';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <GlobalStyle />
       <CalcPaceTemp />
       <CalcPaceDist />
+      <Footer />
     </div>
   );
 }
