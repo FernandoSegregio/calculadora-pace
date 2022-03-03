@@ -49,8 +49,8 @@ const CountainerStyle = styled.div`
       border: none;
       border-radius: 6px;
       font-size: 0.855rem;
-      padding-left: 20px;
       width: 90%;
+      text-align: center;
     }
 
     input::placeholder {
