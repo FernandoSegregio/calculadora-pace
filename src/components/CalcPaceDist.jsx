@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CountainerStyle from './style';
+import { CountainerStyle } from './style';
 
 export default function CalcPaceDist() {
   const [calcTempMin, setCalcTempMin] = useState(0);
@@ -30,7 +30,7 @@ export default function CalcPaceDist() {
     if (decimalMin > 0) {
       const inteiroSeg = decimalMin * 60;
       setCalcTempMin(inteiroMin);
-      setCalcTempSeg(inteiroSeg);
+      setCalcTempSeg(Math.trunc(inteiroSeg));
     } else {
       setCalcTempMin(inteiroMin);
       setCalcTempSeg('00');
