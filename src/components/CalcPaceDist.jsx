@@ -21,7 +21,20 @@ export default function CalcPaceDist() {
   }
 
   function calcDistance() {
+    const hourInMin = Number(hour) * 60;
+    const totalMin = Number(hourInMin) + Number(min);
+    const paceMin = Number(totalMin) / Number(distance);
+    const inteiroMin = Math.trunc(paceMin);
+    const decimalMin = paceMin % 1;
 
+    if (decimalMin > 0) {
+      const inteiroSeg = decimalMin * 60;
+      setCalcTempMin(inteiroMin);
+      setCalcTempSeg(inteiroSeg);
+    } else {
+      setCalcTempMin(inteiroMin);
+      setCalcTempSeg('00');
+    }
   }
 
   return (
@@ -30,7 +43,7 @@ export default function CalcPaceDist() {
       <form action="">
         <label htmlFor="km">
           Distância (em Km)
-          <input type="text" value={distance} onChange={({ target }) => handleIputDist(target)} name="distance" id="km" placeholder="Km" />
+          <input type="number" value={distance} onChange={({ target }) => handleIputDist(target)} name="distance" id="km" placeholder="Km" />
         </label>
         <div className="min-seg">
           Tempo
