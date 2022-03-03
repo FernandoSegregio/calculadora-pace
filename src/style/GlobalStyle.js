@@ -3,21 +3,33 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
 
 :root{
-    --black: #000000;
+    --black: #0C0C0C;
     --gray: #29272A;
-    --white: #ffffff;
+    --white: #FFFFFF;
     --yellow: #FDD33B;
+    --grayLight: #808080
   }
 
   * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: var(--yellow);
   }
   
   body {
+    background-color: var(--yellow);
+    font-family: 'Roboto',  -apple-system, 'Ubuntu', sans-serif;
     margin: 0;
-    font-family: inter, -apple-system, 'Roboto', 'Ubuntu', sans-serif;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div > img {
+    width: 170px;
+    margin-top: 10px;
   }
 `;
