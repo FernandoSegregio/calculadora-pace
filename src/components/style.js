@@ -17,17 +17,25 @@ const CountainerStyle = styled.div`
       text-align: center;
       padding: 23px;
       color: var(--yellow);
-      font-size: 1.12rem;
+      font-size: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;  
     }
 
     label {
       display: flex;
       flex-direction: column;
+      align-items: center;
       column-gap: 4px;
     }
 
     .min-seg {
       align-items: flex-start;
+      width: 86%;
     }
 
     .for-km {
@@ -40,7 +48,8 @@ const CountainerStyle = styled.div`
       border: none;
       border-radius: 6px;
       font-size: 0.855rem;
-      padding-left: 20px
+      padding-left: 20px;
+      width: 150%;
     }
 
     input::placeholder {
@@ -55,9 +64,9 @@ const CountainerStyle = styled.div`
       background-color: var(--black);
       border: none;
       border-radius: 6px;
-      width: 100%;
+      width: 86%;
       color: var(--yellow);
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
   }
 `;
