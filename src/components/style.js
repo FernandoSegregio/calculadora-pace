@@ -166,6 +166,7 @@ export const FooterStyle = styled.footer`
     width: 100%;
     padding: 20px;
     justify-content: center;
+    
   
     h4 {
       font-family: sans-serif;
@@ -179,6 +180,10 @@ export const FooterStyle = styled.footer`
     width: 100%;
     padding: 20px;
     justify-content: center;
+    position: fixed;
+    bottom:0;
+    left:0;
+
   
     h4 {
       font-family: sans-serif;
