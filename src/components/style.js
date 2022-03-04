@@ -15,7 +15,7 @@ export const CountainerStyle = styled.div`
 
     H3 {
       text-align: center;
-      padding: 18px;
+      padding: 15px;
       color: var(--yellow);
       font-size: 1rem;
     }
@@ -24,7 +24,8 @@ export const CountainerStyle = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;  
-      width: 100%
+      width: 100%;
+      padding-bottom: 3px;
     }
 
     label {
