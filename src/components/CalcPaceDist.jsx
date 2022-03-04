@@ -7,6 +7,7 @@ export default function CalcPaceDist() {
   const [distance, setDistance] = useState('');
   const [hour, setHour] = useState('');
   const [min, setMin] = useState('');
+  const [speed, setSpeed] = useState('00.00');
 
   function handleIputDist(target) {
     setDistance(target.value);
@@ -31,14 +32,16 @@ export default function CalcPaceDist() {
       const inteiroSeg = decimalMin * 60;
       setCalcTempMin(inteiroMin);
       setCalcTempSeg(Math.trunc(inteiroSeg));
+      setSpeed((60 / paceMin).toFixed(2));
     } else {
       setCalcTempMin(inteiroMin);
       setCalcTempSeg('00');
+      setSpeed((60 / paceMin).toFixed(2));
     }
   }
 
   return (
-    <CountainerStyle>
+    <CountainerStyle className="speed">
       <h3>PACE MÉDIO DE ACORDO COM A DISTÂNCIA E O TEMPO</h3>
       <form action="">
         <label htmlFor="km">
@@ -54,7 +57,7 @@ export default function CalcPaceDist() {
         </div>
         <button type="button" onClick={calcDistance}>Calcular</button>
       </form>
-      <h3>
+      <h3 className="speed-H3">
         Pace Médio:
         {' '}
         {calcTempMin}
@@ -62,6 +65,14 @@ export default function CalcPaceDist() {
         {' '}
         {calcTempSeg}
         seg
+        {' '}
+      </h3>
+      <h3 className="speed-H3">
+        Velocidade Média:
+        {' '}
+        {speed}
+        {' '}
+        km/h
         {' '}
       </h3>
     </CountainerStyle>

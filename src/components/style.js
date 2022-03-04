@@ -69,6 +69,13 @@ export const CountainerStyle = styled.div`
       color: var(--yellow);
       font-size: 1rem;
     }
+    div .speed {
+      width: 400px;
+    }
+
+    .speed-H3 {
+      padding: 3px
+    }
   }
 `;
 
