@@ -10,8 +10,10 @@ function App() {
     <div className="container-app">
       <img src={logo} alt="Logo Pace Facil" />
       <GlobalStyle />
-      <CalcPaceTemp />
-      <CalcPaceDist />
+      <div className="screen">
+        <CalcPaceTemp />
+        <CalcPaceDist />
+      </div>
       <Footer />
     </div>
   );

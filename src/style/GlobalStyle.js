@@ -22,6 +22,11 @@ export default createGlobalStyle`
     margin: 0;
   }
 
+  .screen {
+    flex-direction: row;
+    column-gap: 30px;
+  }
+
   div {
     display: flex;
     flex-direction: column;
@@ -36,4 +41,14 @@ export default createGlobalStyle`
   .container-app{
     row-gap: 25px;
   }
+
+  @media (max-width: 800px) {
+    .screen {
+    flex-direction: column;
+    row-gap: 18px
+  }
+  }
+
+
+
 `;
