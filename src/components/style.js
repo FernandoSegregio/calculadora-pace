@@ -6,7 +6,7 @@ export const CountainerStyle = styled.div`
     flex-direction: column;
     align-items: center;
     width: 80%;
-    height: 290px;
+    height: 300px;
     background: var(--gray);
     border-radius: 15px;  
     margin-left: auto;
