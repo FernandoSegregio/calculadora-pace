@@ -43,13 +43,13 @@ export default function CalcPaceTemp() {
       <form action="">
         <label htmlFor="km">
           Distância (em Km)
-          <input type="number" value={distance} onChange={({ target }) => handleIputDist(target)} name="distance" id="km" placeholder="Km" />
+          <input type="tel" max="100" min="0" value={distance} onChange={({ target }) => handleIputDist(target)} name="distance" id="km" placeholder="Km" />
         </label>
         <div className="min-seg">
           Pace por Km
           <label htmlFor="for-km" className="for-km">
-            <input type="number" value={min} onChange={({ target }) => handleIputMin(target)} id="for-km" placeholder="Minutos" />
-            <input type="number" value={seg} onChange={({ target }) => handleIputSeg(target)} placeholder="Segundos" />
+            <input type="tel" max="23" min="0" value={min} onChange={({ target }) => handleIputMin(target)} id="for-km" placeholder="Minutos" />
+            <input type="tel" max="59" min="0" value={seg} onChange={({ target }) => handleIputSeg(target)} placeholder="Segundos" />
           </label>
         </div>
         <button type="button" onClick={calcDistance}>Calcular</button>
