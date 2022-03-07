@@ -159,7 +159,7 @@ export const CountainerStyle = styled.div`
 
 export const FooterStyle = styled.footer`
   @media (max-width: 800px) {
-
+    position: relative;
     display: flex;
     flex-direction: row;
     font-size: 12px;
