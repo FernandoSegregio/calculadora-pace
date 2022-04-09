@@ -1,4 +1,4 @@
-<h1 align="center">🏃🏻‍♀️🏃🏾‍♂️ Pace Fácil 🏃🏻‍♀️🏃🏾‍♂️/h1>
+<h1 align="center">🏃🏻‍♀️🏃🏾‍♂️ Pace Fácil 🏃🏻‍♀️🏃🏾‍♂️ </h1>
 
 Sejam Bem Vindos ao Pace Fácil App!
 
