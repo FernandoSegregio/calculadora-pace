@@ -40,12 +40,24 @@ export default createGlobalStyle`
 
   .container-app{
     row-gap: 25px;
+    padding: 56px 0;
+
+    img {
+      margin-bottom: 32px;
+    }
   }
 
   @media (max-width: 800px) {
     .screen {
     flex-direction: column;
-    row-gap: 18px
+    row-gap: 18px  
+  }
+  .container-app{
+    padding: 0;
+
+    img {
+      margin-bottom: 0;
+    }
   }
   }
 
